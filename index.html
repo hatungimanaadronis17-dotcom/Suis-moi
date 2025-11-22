@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta name="google-site-verification" content="kA_5JpIdafz3eCZ4Mlzxoz8XEslUf3qM7XR6oCWxdmM" />
   <meta charset="utf-8" />
+  <!-- BALISE DE VÉRIFICATION GOOGLE (à laisser exactement comme ça) -->
+  <meta name="google-site-verification" content="kA_5JpIdafz3eCZ4Mlzxoz8XEslUf3qM7XR6oCWxdmM" />
+  
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="index,follow"> <!-- FORCE GOOGLE À RÉINDEXER -->
+  <meta name="robots" content="index,follow">
 
   <title>Suis Moi — Échange de suivis TikTok gratuit</title>
   <meta name="description" content="Échange de suivis TikTok rapide et gratuit. Suis 10 personnes et gagne 100 places entrantes. Jusqu'à 4000 abonnés par jour possible !" />
@@ -111,7 +113,7 @@ function resetIfNeeded(u){
   return u;
 }
 
-// Connexion (100 % fonctionnel)
+// Connexion
 $('btnSignup').addEventListener('click', function() {
   const email = $('email').value.trim().toLowerCase();
   const tik   = $('tiktok').value.trim().replace('@','');
