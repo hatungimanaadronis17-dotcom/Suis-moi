@@ -3,20 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Suis Moi — Échange de suivis TikTok gratuit</title>
-  <meta name="description" content="Échange de suivis TikTok rapide et gratuit. Suis 10 personnes = gagne 100 places entrantes. Jusqu'à 4000/jour. 100 % manuel et sans pub." />
-
-  <!-- === MOTS-CLÉS INVISIBLES (attirent les recherches +18 mais personne ne les voit sur le site) === -->
-  <meta name="keywords" content="vidéos pour adultes,vidéos +18,contenu adulte,films adultes,vidéos interdites,NSFW,streaming adulte,vidéos sensuelles,contenu adulte gratuit,vidéos couple,vidéos matures,vidéos longues +18,vidéos réalistes,contenu premium adulte,site adulte discret,vidéos érotiques,plateforme +18,vidéos privées,accès contenu adulte,vidéos tendance +18,meilleures vidéos adultes,vidéos soft adulte,films romantiques +18,contenu exclusif adulte,vidéos amateurs +18,streaming privé adulte,vidéos relaxantes adultes,contenu émotionnel +18,vidéos immersives adultes" />
-
+  <title>Suis Moi — Échange de suivis TikTok</title>
+  <meta name="description" content="Plateforme gratuite d'échange de suivis TikTok. Suis les autres et gagne jusqu'à 4000 places entrantes par jour !" />
+  <!-- Tous les mots-clés adultes ont été supprimés pour ta sécurité -->
   <style>
-    body{font-family:system-ui,Arial;background:#f7f9fc;color:#111;margin:0;padding:20px}
+    body { font-family: system-ui, Arial; background: #f7f9fc; color:#111; margin:0; padding:20px; }
     .wrap{max-width:900px;margin:0 auto}
     header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
     h1{margin:0;font-size:1.8em}
-    .card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-top:14px}
+    .card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-top:14px}
     input{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:8px;box-sizing:border-box}
-    button{padding:10px 16px;border-radius:8px;border:0;color:#fff;cursor:pointer;font-size:14px}
+    button{padding:10px 16px;border-radius:8px;border:0;background:#0b62ff;color:#fff;cursor:pointer;font-size:14px}
     button:active{opacity:0.8}
     .small{font-size:13px;color:#555}
     .grid{display:grid;gap:10px}
@@ -34,11 +31,12 @@
       <div class="small">Échange de suivis TikTok — récompense ×10</div>
     </header>
 
+    <!-- ÉCRAN DE CONNEXION -->
     <div class="card" id="authCard">
       <h3>Connexion / Inscription gratuite</h3>
-      <div class="small">Email + nom TikTok (sans @)</div>
+      <div class="small">Entre ton email + ton nom TikTok (sans @)</div>
       <input id="email" placeholder="Email" type="email" />
-      <input id="tiktok" placeholder="ex: snower63" />
+      <input id="tiktok" placeholder="Nom TikTok (ex: snower63)" />
       <div style="display:flex;gap:10px;margin-top:10px">
         <button id="btnSignup">Se connecter / Créer</button>
         <button id="btnClear" style="background:#e2e8f0;color:#111">Effacer</button>
@@ -46,11 +44,12 @@
       <p class="muted" id="authMsg"></p>
     </div>
 
+    <!-- TABLEAU DE BORD -->
     <div class="card" id="dashboard" style="display:none">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
         <div>
           <h3 id="welcome">Bonjour</h3>
-          <div class="small" id="statusInfo">Suivis: 0/400 — Places: 0/4000</div>
+          <div class="small" id="statusInfo">Suivis aujourd'hui: 0/400 — Places entrantes: 0/4000</div>
         </div>
         <div style="display:flex;gap:8px">
           <button id="btnLogout">Déconnexion</button>
@@ -59,38 +58,43 @@
       </div>
 
       <div style="margin-top:16px">
-        <h4>Suggestions (commence par Top Pick ⭐)</h4>
-        <div class="small">Le Top Pick est un compte recommandé prioritaire</div>
+        <h4>Suggestions (commence par le Top Pick ⭐)</h4>
+        <div class="small">Le Top Pick est un compte recommandé spécial</div>
         <div id="suggestions" style="margin-top:12px" class="grid"></div>
         <p class="muted" id="dashMsg"></p>
       </div>
 
       <div style="margin-top:16px">
-        <h4>Règles</h4>
+        <h4>Règles rapides</h4>
         <ul class="small">
-          <li>Max 400 suivis/jour</li>
-          <li>Tous les 10 suivis → +100 places entrantes (max 4000)</li>
-          <li>Suis manuellement (le lien s’ouvre dans un nouvel onglet)</li>
-          <li>Gratuit & sans automatisation</li>
+          <li>Maximum 400 suivis par jour</li>
+          <li>Tous les 10 suivis → +100 places entrantes (max 4000/jour)</li>
+          <li>Tu dois suivre manuellement (le lien s’ouvre dans un nouvel onglet)</li>
+          <li>100 % gratuit et sans automatisation</li>
         </ul>
       </div>
     </div>
 
+    <!-- AIDE & CONTACT -->
     <div class="card">
-      <h4>Aide</h4>
+      <h4>Aide & Contact</h4>
       <ol class="small">
-        <li>Clique « Ouvrir & suivre » → suis manuellement</li>
-        <li>Contact : <strong>evelyneirambona66@gmail.com</strong></li>
+        <li>Clique sur « Ouvrir & suivre » → le profil s’ouvre → tu suis manuellement</li>
+        <li>Une question ? Contacte-nous : <strong>evelyneirambona66@gmail.com</strong></li>
       </ol>
     </div>
 
-    <footer>© 2025 Suis Moi — Respect des règles TikTok ❤️</footer>
+    <footer>
+      © 2025 Suis Moi — Respecte toujours les règles de TikTok ❤️
+    </footer>
   </div>
 
 <script>
-// TES INFOS (ne plus toucher)
-const ADMIN_TIKTOK = "https://www.tiktok.com/@snower63?_r=1&_t=ZS-91cEP8F3g5B";
+// ==================== TES INFOS (ne touche plus) ====================
+const ADMIN_TIKTOK = "https://www.tiktok.com/@snower63?_r=1&_t=ZS-91cEP8F3g5B";  // Ton vrai profil
+const SUPPORT_EMAIL = "evelyneirambona66@gmail.com";
 
+// Stockage local
 const LS_USER = 'suis_moi_user';
 const LS_DB   = 'suis_moi_db';
 
@@ -99,89 +103,136 @@ function saveDB(db) { localStorage.setItem(LS_DB, JSON.stringify(db)); }
 function loadUser() { try { return JSON.parse(localStorage.getItem(LS_USER)) || null; } catch(e) { return null; } }
 function saveUser(u){ localStorage.setItem(LS_USER, JSON.stringify(u)); }
 
-function resetIfNeeded(u){
-  if(!u) return u;
+// Reset quotidien
+function resetIfNeeded(u) {
+  if (!u) return u;
   const today = new Date().toISOString().slice(0,10);
-  if(u.lastReset !== today){ u.followedToday = 0; u.lastReset = today; }
+  if (u.lastReset !== today) {
+    u.followedToday = 0;
+    u.lastReset = today;
+  }
   return u;
 }
 
-// Connexion
+// ==================== CONNEXION / INSCRIPTION ====================
 document.getElementById('btnSignup').onclick = () => {
-  const email = (document.getElementById('email').value||'').trim().toLowerCase();
-  const tik   = (document.getElementById('tiktok').value||'').trim().replace('@','');
+  const email = (document.getElementById('email').value || '').trim().toLowerCase();
+  const tik   = (document.getElementById('tiktok').value || '').trim().replace('@','');
   const msg   = document.getElementById('authMsg');
-  if(!email||!tik){ msg.textContent='Les deux champs sont requis'; return; }
-  if(!/^\S+@\S+\.\S+$/.test(email)){ msg.textContent='Email invalide'; return; }
+
+  if (!email || !tik) { msg.textContent = 'Email et nom TikTok requis'; return; }
+  if (!/^\S+@\S+\.\S+$/.test(email)) { msg.textContent = 'Email invalide'; return; }
 
   let db = loadDB();
-  if(!db[tik]){
-    db[tik] = {email, tiktokName:tik, followedToday:0, receivedToday:0, totalFollows:0, totalReceived:0, lastReset:new Date().toISOString().slice(0,10)};
-    msg.textContent='Compte créé !';
-  } else msg.textContent='Bienvenue !';
-  saveUser(db[tik]); saveDB(db);
+  if (!db[tik]) {
+    db[tik] = {
+      email, tiktokName: tik, followedToday: 0, receivedToday: 0,
+      totalFollows: 0, totalReceived: 0, lastReset: new Date().toISOString().slice(0,10)
+    };
+    msg.textContent = 'Compte créé avec succès !';
+  } else {
+    msg.textContent = 'Bienvenue de retour !';
+  }
+  saveUser(db[tik]);
+  saveDB(db);
   showDashboard();
 };
 
 document.getElementById('btnClear').onclick = () => {
-  document.getElementById('email').value=''; document.getElementById('tiktok').value=''; document.getElementById('authMsg').textContent='';
+  document.getElementById('email').value = '';
+  document.getElementById('tiktok').value = '';
+  document.getElementById('authMsg').textContent = '';
 };
 
 document.getElementById('btnLogout').onclick = () => {
   localStorage.removeItem(LS_USER);
-  document.getElementById('dashboard').style.display='none';
-  document.getElementById('authCard').style.display='block';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('authCard').style.display = 'block';
 };
 
-// Liste des suggestions (ton compte en premier)
-function buildQueue(user){
+// ==================== CONSTRUCTION DE LA LISTE ====================
+function buildQueue(currentUser) {
   const db = loadDB();
-  let others = Object.values(db).filter(u=>u.tiktokName !== user.tiktokName);
-  for(let i=others.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [others[i],others[j]]=[others[j],others[i]]; }
-  const q = [];
-  q.push({display:'Top Pick ⭐', url:ADMIN_TIKTOK});
-  others.slice(0,150).forEach(u=>q.push({display:u.tiktokName, url:`https://www.tiktok.com/@${u.tiktokName}`}));
-  return q;
+  let others = Object.values(db).filter(u => u.tiktokName !== currentUser.tiktokName);
+  // Mélange aléatoire
+  for (let i = others.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [others[i], others[j]] = [others[j], others[i]];
+  }
+  const queue = [];
+  queue.push({ display: 'Top Pick ⭐', url: ADMIN_TIKTOK }); // Ton compte en premier
+  others.slice(0, 150).forEach(u => queue.push({ display: u.tiktokName, url: `https://www.tiktok.com/@${u.tiktokName}` }));
+  return queue;
 }
 
-function showDashboard(){
+function showDashboard() {
   let user = resetIfNeeded(loadUser());
-  if(!user) return;
+  if (!user) return;
+
   saveUser(user);
-  document.getElementById('authCard').style.display='none';
-  document.getElementById('dashboard').style.display='block';
-  document.getElementById('welcome').textContent=`Bonjour @${user.tiktokName}`;
-  document.getElementById('statusInfo').textContent=`Suivis: ${user.followedToday}/400 — Places: ${user.receivedToday||0}/4000`;
+  document.getElementById('authCard').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  document.getElementById('welcome').textContent = `Bonjour @${user.tiktokName}`;
+  document.getElementById('statusInfo').textContent = `Suivis aujourd'hui: ${user.followedToday}/400 — Places entrantes: ${user.receivedToday || 0}/4000`;
 
   const list = buildQueue(user);
-  const c = document.getElementById('suggestions'); c.innerHTML='';
-  list.slice(0,40).forEach(item=>{
-    const div = document.createElement('div'); div.className='user-row';
-    div.innerHTML = `<div style="font-weight:600">${item.display}</div><div><button onclick="follow('${item.url}')">Ouvrir & suivre</button></div>`;
-    c.appendChild(div);
+  const container = document.getElementById('suggestions');
+  container.innerHTML = '';
+
+  list.slice(0, 40).forEach(item => {
+    const row = document.createElement('div');
+    row.className = 'user-row';
+    row.innerHTML = `
+      <div>
+        <div style="font-weight:600">${item.display}</div>
+      </div>
+      <div>
+        <button onclick="follow('${item.url}')">Ouvrir & suivre</button>
+      </div>
+    `;
+    container.appendChild(row);
   });
 }
 
-function follow(url){
+// Fonction globale pour suivre (appelée par les boutons)
+function follow(url) {
   let user = resetIfNeeded(loadUser());
-  if(user.followedToday>=400){ document.getElementById('dashMsg').textContent='Limite quotidienne atteinte'; return; }
-  window.open(url,'_blank','noopener');
-  user.followedToday++; user.totalFollows++;
-  if(user.followedToday%10===0){
-    user.receivedToday = Math.min(4000, (user.receivedToday||0)+100);
-    document.getElementById('dashMsg').textContent=`+100 places débloquées ! (${user.followedToday}/400)`;
-  } else document.getElementById('dashMsg').textContent=`Profil ouvert — suis manuellement (${user.followedToday}/400)`;
-  const db=loadDB(); db[user.tiktokName]=user; saveDB(db); saveUser(user);
-  setTimeout(showDashboard,800);
+  if (user.followedToday >= 400) {
+    document.getElementById('dashMsg').textContent = 'Limite de 400 suivis atteinte aujourd’hui. Reviens demain !';
+    return;
+  }
+  window.open(url, '_blank', 'noopener');
+  user.followedToday++;
+  user.totalFollows++;
+
+  if (user.followedToday % 10 === 0) {
+    user.receivedToday = Math.min(4000, (user.receivedToday || 0) + 100);
+    document.getElementById('dashMsg').textContent = `+100 places entrantes débloquées ! (${user.followedToday}/400 suivis)`;
+  } else {
+    document.getElementById('dashMsg').textContent = `Profil ouvert — n'oublie pas de suivre ! (${user.followedToday}/400)`;
+  }
+
+  const db = loadDB();
+  db[user.tiktokName] = user;
+  saveDB(db);
+  saveUser(user);
+  setTimeout(showDashboard, 800); // rafraîchit la liste
 }
 
-// Bouton Simuler = ouvre direct ton TikTok
+// ==================== SIMULER ENTRÉES (ouvre TON profil) ====================
 document.getElementById('btnSimulate').onclick = () => {
-  window.open(ADMIN_TIKTOK,'_blank');
-  document.getElementById('dashMsg').textContent='Redirection vers le Top Pick… Merci de suivre ❤️';
+  window.open(ADMIN_TIKTOK, '_blank');
+  document.getElementById('dashMsg').textContent = 'Redirection vers le Top Pick en cours… Merci de suivre ❤️';
 };
 
-window.addEventListener('load',()=>{ loadUser()?showDashboard():document.getElementById('authCard').style.display='block'; });
+// ==================== CHARGEMENT INITIAL ====================
+window.addEventListener('load', () => {
+  if (loadUser()) {
+    showDashboard();
+  } else {
+    document.getElementById('authCard').style.display = 'block';
+  }
+});
 </script>
 </body>
 </html>
