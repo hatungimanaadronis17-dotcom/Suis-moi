@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hatungimanaadronis17-dotcom.github.io/Suis-moi/sitemap.xml
